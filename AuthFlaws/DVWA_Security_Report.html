@@ -1,0 +1,2846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="DVWA_Security_Report/normalize/normalize.css" rel="stylesheet">
+<link
+	href="DVWA_Security_Report/themes/original/main.css" rel="stylesheet">
+<link
+	href="DVWA_Security_Report/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="DVWA_Security_Report/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Tue 8 Apr 2025, at 23:20:14</span>
+		</p>
+		<p>ZAP Version: 2.16.1</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(4)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(41.7%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>12</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(9)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(12)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Directory Browsing</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Hidden File Found</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(16.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Big Redirect Detected (Potential Sensitive Information Leak)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cookie without SameSite Attribute</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Authentication Request Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(8.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>72</span><br> <span
+								class="additional-info-percentages">(600.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>12</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (223 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (299 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 08 Apr 2025 17:40:38 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1342
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1342 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en-GB&quot;&gt;
+
+	&lt;head&gt;
+
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+
+		&lt;title&gt;Login :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;dvwa/css/login.css&quot; /&gt;
+
+	&lt;/head&gt;
+
+	&lt;body&gt;
+
+	&lt;div id=&quot;wrapper&quot;&gt;
+
+	&lt;div id=&quot;header&quot;&gt;
+
+	&lt;br /&gt;
+
+	&lt;p&gt;&lt;img src=&quot;dvwa/images/login_logo.png&quot; /&gt;&lt;/p&gt;
+
+	&lt;br /&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;header&quot;&gt;--&gt;
+
+	&lt;div id=&quot;content&quot;&gt;
+
+	&lt;form action=&quot;login.php&quot; method=&quot;post&quot;&gt;
+
+	&lt;fieldset&gt;
+
+			&lt;label for=&quot;user&quot;&gt;Username&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;loginInput&quot; size=&quot;20&quot; name=&quot;username&quot;&gt;&lt;br /&gt;
+
+
+			&lt;label for=&quot;pass&quot;&gt;Password&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;loginInput&quot; AUTOCOMPLETE=&quot;off&quot; size=&quot;20&quot; name=&quot;password&quot;&gt;&lt;br /&gt;
+
+			&lt;br /&gt;
+
+			&lt;p class=&quot;submit&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Login&quot; name=&quot;Login&quot;&gt;&lt;/p&gt;
+
+	&lt;/fieldset&gt;
+
+	&lt;input type=&#39;hidden&#39; name=&#39;user_token&#39; value=&#39;5c5608607de38e9653d8e65da43f8355&#39; /&gt;
+
+	&lt;/form&gt;
+
+	&lt;br /&gt;
+
+	
+
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+
+	&lt;/div &gt; &lt;!--&lt;div id=&quot;content&quot;&gt;--&gt;
+
+	&lt;div id=&quot;footer&quot;&gt;
+
+	&lt;p&gt;&lt;a href=&quot;https://github.com/digininja/DVWA/&quot; target=&quot;_blank&quot;&gt;Damn Vulnerable Web Application (DVWA)&lt;/a&gt;&lt;/p&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;footer&quot;&gt; --&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;wrapper&quot;&gt; --&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Hidden File Found</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/server-status</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_FULL = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/538.html">CWE-538</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A sensitive file was identified as accessible or available. This may leak administrative, configuration, or credential information which can be leveraged by a malicious individual to further attack the system or conduct social engineering efforts.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>apache_server_status</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (341 bytes)</summary>
+				
+				<pre><code>GET http://localhost/server-status HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/dvwa/login.php
+Cookie: PHPSESSID=jp5473vikcol3mls54rbo1813o; security=impossible
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (179 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 08 Apr 2025 17:42:03 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Length: 4990
+Content-Type: text/html; charset=ISO-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4990 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Apache Status&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Apache Server Status for localhost (via 127.0.0.1)&lt;/h1&gt;
+
+&lt;dl&gt;&lt;dt&gt;Server Version: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12&lt;/dt&gt;
+&lt;dt&gt;Server MPM: WinNT&lt;/dt&gt;
+&lt;dt&gt;Apache Lounge VS17 Server built: Oct 18 2023 13:03:18
+&lt;/dt&gt;&lt;/dl&gt;&lt;hr /&gt;&lt;dl&gt;
+&lt;dt&gt;Current Time: Tuesday, 08-Apr-2025 23:12:03 India Standard Time&lt;/dt&gt;
+&lt;dt&gt;Restart Time: Tuesday, 08-Apr-2025 23:10:02 India Standard Time&lt;/dt&gt;
+&lt;dt&gt;Parent Server Config. Generation: 1&lt;/dt&gt;
+&lt;dt&gt;Parent Server MPM Generation: 0&lt;/dt&gt;
+&lt;dt&gt;Server uptime:  2 minutes 1 second&lt;/dt&gt;
+&lt;dt&gt;Server load: -1.00 -1.00 -1.00&lt;/dt&gt;
+&lt;dt&gt;Total accesses: 1988 - Total Traffic: 1.3 MB - Total Duration: 144081&lt;/dt&gt;
+&lt;dt&gt;16.4 requests/sec - 11.2 kB/second - 701 B/request - 72.4753 ms/request&lt;/dt&gt;
+&lt;dt&gt;3 requests currently being processed, 0 workers gracefully restarting, 147 idle workers&lt;/dt&gt;
+&lt;/dl&gt;&lt;pre&gt;________________________________________________________________
+________________________________________________________________
+_______W__W_________K_&lt;/pre&gt;
+&lt;p&gt;Scoreboard Key:&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;_&lt;/code&gt;&lt;/b&gt;&quot; Waiting for Connection, 
+&quot;&lt;b&gt;&lt;code&gt;S&lt;/code&gt;&lt;/b&gt;&quot; Starting up, 
+&quot;&lt;b&gt;&lt;code&gt;R&lt;/code&gt;&lt;/b&gt;&quot; Reading Request,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;W&lt;/code&gt;&lt;/b&gt;&quot; Sending Reply, 
+&quot;&lt;b&gt;&lt;code&gt;K&lt;/code&gt;&lt;/b&gt;&quot; Keepalive (read), 
+&quot;&lt;b&gt;&lt;code&gt;D&lt;/code&gt;&lt;/b&gt;&quot; DNS Lookup,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;C&lt;/code&gt;&lt;/b&gt;&quot; Closing connection, 
+&quot;&lt;b&gt;&lt;code&gt;L&lt;/code&gt;&lt;/b&gt;&quot; Logging, 
+&quot;&lt;b&gt;&lt;code&gt;G&lt;/code&gt;&lt;/b&gt;&quot; Gracefully finishing,&lt;br /&gt; 
+&quot;&lt;b&gt;&lt;code&gt;I&lt;/code&gt;&lt;/b&gt;&quot; Idle cleanup of worker, 
+&quot;&lt;b&gt;&lt;code&gt;.&lt;/code&gt;&lt;/b&gt;&quot; Open slot with no current process&lt;br /&gt;
+&lt;/p&gt;
+
+
+&lt;table border=&quot;0&quot;&gt;&lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;th&gt;PID&lt;/th&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;th&gt;M&lt;/th&gt;&lt;th&gt;SS&lt;/th&gt;&lt;th&gt;Req&lt;/th&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;th&gt;Child&lt;/th&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;th&gt;Client&lt;/th&gt;&lt;th&gt;Protocol&lt;/th&gt;&lt;th&gt;VHost&lt;/th&gt;&lt;th&gt;Request&lt;/th&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;16424&lt;/td&gt;&lt;td&gt;0/588/588&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;42603&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.42&lt;/td&gt;&lt;td&gt;0.42
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /dvwa/login.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;16424&lt;/td&gt;&lt;td&gt;0/318/318&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;23018&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.22&lt;/td&gt;&lt;td&gt;0.22
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /dvwa/dvwa/css HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;16424&lt;/td&gt;&lt;td&gt;13/404/404&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;32065&lt;/td&gt;&lt;td&gt;4.0&lt;/td&gt;&lt;td&gt;0.27&lt;/td&gt;&lt;td&gt;0.27
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /dvwa/login.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;16424&lt;/td&gt;&lt;td&gt;13/125/125&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;6072&lt;/td&gt;&lt;td&gt;3.8&lt;/td&gt;&lt;td&gt;0.07&lt;/td&gt;&lt;td&gt;0.07
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /server-status HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;16424&lt;/td&gt;&lt;td&gt;97/404/404&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;td&gt;31060&lt;/td&gt;&lt;td&gt;62.8&lt;/td&gt;&lt;td&gt;0.26&lt;/td&gt;&lt;td&gt;0.26
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /dvwa/login.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;16424&lt;/td&gt;&lt;td&gt;0/149/149&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;9259&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.08&lt;/td&gt;&lt;td&gt;0.08
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /dvwa/login.php/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+ &lt;hr /&gt; &lt;table&gt;
+ &lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;td&gt;Child Server number - generation&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;PID&lt;/th&gt;&lt;td&gt;OS process ID&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;td&gt;Number of accesses this connection / this child / this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;M&lt;/th&gt;&lt;td&gt;Mode of operation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;SS&lt;/th&gt;&lt;td&gt;Seconds since beginning of most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Req&lt;/th&gt;&lt;td&gt;Milliseconds required to process most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;td&gt;Sum of milliseconds required to process all requests&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;td&gt;Kilobytes transferred this connection&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Child&lt;/th&gt;&lt;td&gt;Megabytes transferred this child&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;td&gt;Total megabytes transferred this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;/table&gt;
+&lt;hr&gt;
+&lt;table cellspacing=0 cellpadding=0&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#000000&quot;&gt;
+&lt;b&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Arial,Helvetica&quot;&gt;SSL/TLS Session Cache Status:&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot;&gt;
+cache type: &lt;b&gt;SHMCB&lt;/b&gt;, shared memory: &lt;b&gt;512000&lt;/b&gt; bytes, current entries: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;subcaches: &lt;b&gt;32&lt;/b&gt;, indexes per subcache: &lt;b&gt;88&lt;/b&gt;&lt;br&gt;index usage: &lt;b&gt;0%&lt;/b&gt;, cache usage: &lt;b&gt;0%&lt;/b&gt;&lt;br&gt;total entries stored since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries replaced since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries expired since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total (pre-expiry) entries scrolled out of the cache: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total retrieves since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;total removes since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 200 OK</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Consider whether or not the component is actually required in production, if it isn&#39;t then disable it. If it is then ensure access to it requires appropriate authentication and authorization, or limit exposure to internal systems or specific source IPs, etc.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Directory Browsing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa/dvwa/css/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_API = </span>
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_QA_FULL = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/548.html">CWE-548</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>It is possible to view the directory listing. Directory listing may reveal hidden scripts, include files, backup source files, etc. which can be accessed to read sensitive information.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (342 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa/dvwa/css/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/dvwa/login.php
+Cookie: PHPSESSID=jp5473vikcol3mls54rbo1813o; security=impossible
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (173 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 08 Apr 2025 17:41:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Length: 1632
+Content-Type: text/html;charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1632 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Index of /dvwa/dvwa/css&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+&lt;h1&gt;Index of /dvwa/dvwa/css&lt;/h1&gt;
+  &lt;table&gt;
+   &lt;tr&gt;&lt;th valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/blank.gif&quot; alt=&quot;[ICO]&quot;&gt;&lt;/th&gt;&lt;th&gt;&lt;a href=&quot;?C=N;O=D&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href=&quot;?C=M;O=A&quot;&gt;Last modified&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href=&quot;?C=S;O=A&quot;&gt;Size&lt;/a&gt;&lt;/th&gt;&lt;th&gt;&lt;a href=&quot;?C=D;O=A&quot;&gt;Description&lt;/a&gt;&lt;/th&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;th colspan=&quot;5&quot;&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/back.gif&quot; alt=&quot;[PARENTDIR]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;/dvwa/dvwa/&quot;&gt;Parent Directory&lt;/a&gt;       &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;  - &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/text.gif&quot; alt=&quot;[TXT]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;help.css&quot;&gt;help.css&lt;/a&gt;               &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2025-04-01 18:55  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;304 &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/text.gif&quot; alt=&quot;[TXT]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;login.css&quot;&gt;login.css&lt;/a&gt;              &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2025-04-01 18:55  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;842 &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/text.gif&quot; alt=&quot;[TXT]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;main.css&quot;&gt;main.css&lt;/a&gt;               &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2025-04-01 18:55  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;4.4K&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td valign=&quot;top&quot;&gt;&lt;img src=&quot;/icons/text.gif&quot; alt=&quot;[TXT]&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;source.css&quot;&gt;source.css&lt;/a&gt;             &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;2025-04-01 18:55  &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;319 &lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;th colspan=&quot;5&quot;&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>http://localhost/dvwa/dvwa/css/</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Parent Directory</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Disable directory browsing. If this is required, make sure the listed files does not induce risks.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (223 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (299 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 08 Apr 2025 17:40:38 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1342
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1342 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en-GB&quot;&gt;
+
+	&lt;head&gt;
+
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+
+		&lt;title&gt;Login :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;dvwa/css/login.css&quot; /&gt;
+
+	&lt;/head&gt;
+
+	&lt;body&gt;
+
+	&lt;div id=&quot;wrapper&quot;&gt;
+
+	&lt;div id=&quot;header&quot;&gt;
+
+	&lt;br /&gt;
+
+	&lt;p&gt;&lt;img src=&quot;dvwa/images/login_logo.png&quot; /&gt;&lt;/p&gt;
+
+	&lt;br /&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;header&quot;&gt;--&gt;
+
+	&lt;div id=&quot;content&quot;&gt;
+
+	&lt;form action=&quot;login.php&quot; method=&quot;post&quot;&gt;
+
+	&lt;fieldset&gt;
+
+			&lt;label for=&quot;user&quot;&gt;Username&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;loginInput&quot; size=&quot;20&quot; name=&quot;username&quot;&gt;&lt;br /&gt;
+
+
+			&lt;label for=&quot;pass&quot;&gt;Password&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;loginInput&quot; AUTOCOMPLETE=&quot;off&quot; size=&quot;20&quot; name=&quot;password&quot;&gt;&lt;br /&gt;
+
+			&lt;br /&gt;
+
+			&lt;p class=&quot;submit&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Login&quot; name=&quot;Login&quot;&gt;&lt;/p&gt;
+
+	&lt;/fieldset&gt;
+
+	&lt;input type=&#39;hidden&#39; name=&#39;user_token&#39; value=&#39;5c5608607de38e9653d8e65da43f8355&#39; /&gt;
+
+	&lt;/form&gt;
+
+	&lt;br /&gt;
+
+	
+
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+
+	&lt;/div &gt; &lt;!--&lt;div id=&quot;content&quot;&gt;--&gt;
+
+	&lt;div id=&quot;footer&quot;&gt;
+
+	&lt;p&gt;&lt;a href=&quot;https://github.com/digininja/DVWA/&quot; target=&quot;_blank&quot;&gt;Damn Vulnerable Web Application (DVWA)&lt;/a&gt;&lt;/p&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;footer&quot;&gt; --&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;wrapper&quot;&gt; --&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (223 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (299 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 08 Apr 2025 17:40:38 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1342
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1342 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en-GB&quot;&gt;
+
+	&lt;head&gt;
+
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+
+		&lt;title&gt;Login :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;dvwa/css/login.css&quot; /&gt;
+
+	&lt;/head&gt;
+
+	&lt;body&gt;
+
+	&lt;div id=&quot;wrapper&quot;&gt;
+
+	&lt;div id=&quot;header&quot;&gt;
+
+	&lt;br /&gt;
+
+	&lt;p&gt;&lt;img src=&quot;dvwa/images/login_logo.png&quot; /&gt;&lt;/p&gt;
+
+	&lt;br /&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;header&quot;&gt;--&gt;
+
+	&lt;div id=&quot;content&quot;&gt;
+
+	&lt;form action=&quot;login.php&quot; method=&quot;post&quot;&gt;
+
+	&lt;fieldset&gt;
+
+			&lt;label for=&quot;user&quot;&gt;Username&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;loginInput&quot; size=&quot;20&quot; name=&quot;username&quot;&gt;&lt;br /&gt;
+
+
+			&lt;label for=&quot;pass&quot;&gt;Password&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;loginInput&quot; AUTOCOMPLETE=&quot;off&quot; size=&quot;20&quot; name=&quot;password&quot;&gt;&lt;br /&gt;
+
+			&lt;br /&gt;
+
+			&lt;p class=&quot;submit&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Login&quot; name=&quot;Login&quot;&gt;&lt;/p&gt;
+
+	&lt;/fieldset&gt;
+
+	&lt;input type=&#39;hidden&#39; name=&#39;user_token&#39; value=&#39;5c5608607de38e9653d8e65da43f8355&#39; /&gt;
+
+	&lt;/form&gt;
+
+	&lt;br /&gt;
+
+	
+
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+
+	&lt;/div &gt; &lt;!--&lt;div id=&quot;content&quot;&gt;--&gt;
+
+	&lt;div id=&quot;footer&quot;&gt;
+
+	&lt;p&gt;&lt;a href=&quot;https://github.com/digininja/DVWA/&quot; target=&quot;_blank&quot;&gt;Damn Vulnerable Web Application (DVWA)&lt;/a&gt;&lt;/p&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;footer&quot;&gt; --&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;wrapper&quot;&gt; --&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(4)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(4)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Big Redirect Detected (Potential Sensitive Information Leak)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/201.html">CWE-201</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Location header URI length: 22 [http://localhost/dvwa/].</p>
+
+<p>Predicted response size: 322.</p>
+
+<p>Response Body Length: 329.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (223 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (227 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 301 Moved Permanently
+Date: Tue, 08 Apr 2025 17:40:38 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Location: http://localhost/dvwa/
+Content-Length: 329
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (329 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;301 Moved Permanently&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Moved Permanently&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;http://localhost/dvwa/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cookie without SameSite Attribute</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1275.html">CWE-1275</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a &#39;cross-site&#39; request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (256 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/dvwa
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (660 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Tue, 08 Apr 2025 17:40:39 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Set-Cookie: security=impossible; path=/; HttpOnly
+Set-Cookie: PHPSESSID=h16tr79nvh2bfc2ct4vpk8qhdr; expires=Wed, 09 Apr 2025 17:40:39 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=jp5473vikcol3mls54rbo1813o; expires=Wed, 09 Apr 2025 17:40:39 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Location: login.php
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>security</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: security</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the SameSite attribute is set to either &#39;lax&#39; or ideally &#39;strict&#39; for all cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (223 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (299 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 08 Apr 2025 17:40:38 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1342
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1342 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en-GB&quot;&gt;
+
+	&lt;head&gt;
+
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+
+		&lt;title&gt;Login :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;dvwa/css/login.css&quot; /&gt;
+
+	&lt;/head&gt;
+
+	&lt;body&gt;
+
+	&lt;div id=&quot;wrapper&quot;&gt;
+
+	&lt;div id=&quot;header&quot;&gt;
+
+	&lt;br /&gt;
+
+	&lt;p&gt;&lt;img src=&quot;dvwa/images/login_logo.png&quot; /&gt;&lt;/p&gt;
+
+	&lt;br /&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;header&quot;&gt;--&gt;
+
+	&lt;div id=&quot;content&quot;&gt;
+
+	&lt;form action=&quot;login.php&quot; method=&quot;post&quot;&gt;
+
+	&lt;fieldset&gt;
+
+			&lt;label for=&quot;user&quot;&gt;Username&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;loginInput&quot; size=&quot;20&quot; name=&quot;username&quot;&gt;&lt;br /&gt;
+
+
+			&lt;label for=&quot;pass&quot;&gt;Password&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;loginInput&quot; AUTOCOMPLETE=&quot;off&quot; size=&quot;20&quot; name=&quot;password&quot;&gt;&lt;br /&gt;
+
+			&lt;br /&gt;
+
+			&lt;p class=&quot;submit&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Login&quot; name=&quot;Login&quot;&gt;&lt;/p&gt;
+
+	&lt;/fieldset&gt;
+
+	&lt;input type=&#39;hidden&#39; name=&#39;user_token&#39; value=&#39;5c5608607de38e9653d8e65da43f8355&#39; /&gt;
+
+	&lt;/form&gt;
+
+	&lt;br /&gt;
+
+	
+
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+
+	&lt;/div &gt; &lt;!--&lt;div id=&quot;content&quot;&gt;--&gt;
+
+	&lt;div id=&quot;footer&quot;&gt;
+
+	&lt;p&gt;&lt;a href=&quot;https://github.com/digininja/DVWA/&quot; target=&quot;_blank&quot;&gt;Damn Vulnerable Web Application (DVWA)&lt;/a&gt;&lt;/p&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;footer&quot;&gt; --&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;wrapper&quot;&gt; --&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/8.2.12</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (223 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (299 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 08 Apr 2025 17:40:38 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1342
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1342 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en-GB&quot;&gt;
+
+	&lt;head&gt;
+
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+
+		&lt;title&gt;Login :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;dvwa/css/login.css&quot; /&gt;
+
+	&lt;/head&gt;
+
+	&lt;body&gt;
+
+	&lt;div id=&quot;wrapper&quot;&gt;
+
+	&lt;div id=&quot;header&quot;&gt;
+
+	&lt;br /&gt;
+
+	&lt;p&gt;&lt;img src=&quot;dvwa/images/login_logo.png&quot; /&gt;&lt;/p&gt;
+
+	&lt;br /&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;header&quot;&gt;--&gt;
+
+	&lt;div id=&quot;content&quot;&gt;
+
+	&lt;form action=&quot;login.php&quot; method=&quot;post&quot;&gt;
+
+	&lt;fieldset&gt;
+
+			&lt;label for=&quot;user&quot;&gt;Username&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;loginInput&quot; size=&quot;20&quot; name=&quot;username&quot;&gt;&lt;br /&gt;
+
+
+			&lt;label for=&quot;pass&quot;&gt;Password&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;loginInput&quot; AUTOCOMPLETE=&quot;off&quot; size=&quot;20&quot; name=&quot;password&quot;&gt;&lt;br /&gt;
+
+			&lt;br /&gt;
+
+			&lt;p class=&quot;submit&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Login&quot; name=&quot;Login&quot;&gt;&lt;/p&gt;
+
+	&lt;/fieldset&gt;
+
+	&lt;input type=&#39;hidden&#39; name=&#39;user_token&#39; value=&#39;5c5608607de38e9653d8e65da43f8355&#39; /&gt;
+
+	&lt;/form&gt;
+
+	&lt;br /&gt;
+
+	
+
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+
+	&lt;/div &gt; &lt;!--&lt;div id=&quot;content&quot;&gt;--&gt;
+
+	&lt;div id=&quot;footer&quot;&gt;
+
+	&lt;p&gt;&lt;a href=&quot;https://github.com/digininja/DVWA/&quot; target=&quot;_blank&quot;&gt;Damn Vulnerable Web Application (DVWA)&lt;/a&gt;&lt;/p&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;footer&quot;&gt; --&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;wrapper&quot;&gt; --&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-0-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Authentication Request Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/dvwa/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given request has been identified as an authentication request. The &#39;Other Info&#39; field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to &quot;Auto-Detect&quot; then this rule will change the authentication to match the request identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=Login</p>
+
+<p>userValue=Login</p>
+
+<p>passwordParam=password</p>
+
+<p>referer=http://localhost/dvwa/login.php</p>
+
+<p>csrfToken=user_token</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (412 bytes)</summary>
+				
+				<pre><code>POST http://localhost/dvwa/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/dvwa/login.php
+content-length: 81
+Cookie: PHPSESSID=jp5473vikcol3mls54rbo1813o; security=impossible
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (81 bytes)</summary>
+				
+				<pre><code>username=ZAP&amp;password=ZAP&amp;Login=Login&amp;user_token=2214d6d33e298da974c920ae220ba710</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (470 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Tue, 08 Apr 2025 17:40:39 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=9k4qk1qc6s2k9d00g4am5pgjnq; expires=Wed, 09 Apr 2025 17:40:39 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Location: login.php
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Login</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:security</p>
+
+<p>cookie:PHPSESSID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (256 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/dvwa
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (660 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Tue, 08 Apr 2025 17:40:39 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Set-Cookie: security=impossible; path=/; HttpOnly
+Set-Cookie: PHPSESSID=h16tr79nvh2bfc2ct4vpk8qhdr; expires=Wed, 09 Apr 2025 17:40:39 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=jp5473vikcol3mls54rbo1813o; expires=Wed, 09 Apr 2025 17:40:39 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Location: login.php
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>security</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>impossible</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/dvwa</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (162 bytes)</summary>
+				
+				<pre><code>GET http://localhost/dvwa HTTP/1.1
+host: localhost
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (628 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Tue, 08 Apr 2025 17:42:04 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Set-Cookie: security=impossible; path=/; HttpOnly
+Set-Cookie: PHPSESSID=n03koh3q49sg080f3hmqir3l0i; expires=Wed, 09 Apr 2025 17:42:04 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Expires: Tue, 23 Jun 2009 12:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=ckntofcb2lnv4doqou3ppufase; expires=Wed, 09 Apr 2025 17:42:04 GMT; Max-Age=86400; path=/; HttpOnly; SameSite=Strict
+Content-Length: 1342
+Content-Type: text/html;charset=utf-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1342 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en-GB&quot;&gt;
+
+	&lt;head&gt;
+
+		&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+
+		&lt;title&gt;Login :: Damn Vulnerable Web Application (DVWA)&lt;/title&gt;
+
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;dvwa/css/login.css&quot; /&gt;
+
+	&lt;/head&gt;
+
+	&lt;body&gt;
+
+	&lt;div id=&quot;wrapper&quot;&gt;
+
+	&lt;div id=&quot;header&quot;&gt;
+
+	&lt;br /&gt;
+
+	&lt;p&gt;&lt;img src=&quot;dvwa/images/login_logo.png&quot; /&gt;&lt;/p&gt;
+
+	&lt;br /&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;header&quot;&gt;--&gt;
+
+	&lt;div id=&quot;content&quot;&gt;
+
+	&lt;form action=&quot;login.php&quot; method=&quot;post&quot;&gt;
+
+	&lt;fieldset&gt;
+
+			&lt;label for=&quot;user&quot;&gt;Username&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;loginInput&quot; size=&quot;20&quot; name=&quot;username&quot;&gt;&lt;br /&gt;
+
+
+			&lt;label for=&quot;pass&quot;&gt;Password&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;loginInput&quot; AUTOCOMPLETE=&quot;off&quot; size=&quot;20&quot; name=&quot;password&quot;&gt;&lt;br /&gt;
+
+			&lt;br /&gt;
+
+			&lt;p class=&quot;submit&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Login&quot; name=&quot;Login&quot;&gt;&lt;/p&gt;
+
+	&lt;/fieldset&gt;
+
+	&lt;input type=&#39;hidden&#39; name=&#39;user_token&#39; value=&#39;4fc2d58432d7b35beb9310eafb068b22&#39; /&gt;
+
+	&lt;/form&gt;
+
+	&lt;br /&gt;
+
+	
+
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+	&lt;br /&gt;
+
+	&lt;/div &gt; &lt;!--&lt;div id=&quot;content&quot;&gt;--&gt;
+
+	&lt;div id=&quot;footer&quot;&gt;
+
+	&lt;p&gt;&lt;a href=&quot;https://github.com/digininja/DVWA/&quot; target=&quot;_blank&quot;&gt;Damn Vulnerable Web Application (DVWA)&lt;/a&gt;&lt;/p&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;footer&quot;&gt; --&gt;
+
+	&lt;/div&gt; &lt;!--&lt;div id=&quot;wrapper&quot;&gt; --&gt;
+
+	&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Directory Browsing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/0/">Directory Browsing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/548.html">548</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>48</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/mod/core.html#options">https://httpd.apache.org/docs/mod/core.html#options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Hidden File Found</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40035/">Hidden File Finder</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/538.html">538</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html">https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</a></li>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/mod_status.html">https://httpd.apache.org/docs/current/mod/mod_status.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Big Redirect Detected (Potential Sensitive Information Leak)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10044/">Big Redirect Detected (Potential Sensitive Information Leak)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cookie without SameSite Attribute</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie without SameSite Attribute</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</a></li>
+										<li><a
+											href="https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Authentication Request Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Authentication Request Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
