@@ -20,7 +20,7 @@ Contains:
 Contains:
 - The report of the vulnerabilities found after scanning with the help of OWASP ZAP 
 
-### ▶️ [`Final_Report/`](./Final_Report/)
+### ▶️ [`FinalReport/`](./FinalReport/)
 Contains:
 - 📄 `Task1_WebAppTesting_Report.docm`: The final detailed report of all findings, tools used, and mitigation strategies
 
